@@ -24,3 +24,34 @@ It can be run on any computing environment, from a developer's laptop to a virtu
 Docker is a popular choice for developing, deploying, and running microservices-based applications. Microservices are small, independent services that communicate with each other through well-defined APIs. Docker containers are a good fit for microservices because they are lightweight, portable, and scalable.
 
 Docker is also a popular choice for continuous integration and continuous delivery (CI/CD) pipelines. CI/CD is a set of practices that automates the building, testing, and deployment of software. Docker containers can be used to create consistent development, testing, and production environments, which makes it easier to deploy software quickly and reliably.
+
+## Images & Containers
+
+### Images
+
+- Images are like _blueprints_ for containers
+- The images contain the following information:
+  - Runtime environment
+  - Application code
+  - Any dependencies
+  - Extra configuration (e.g. env variables)
+  - Commands
+- Images also have a file system of their own which is independent from the rest of your computer
+- Images are _read-only_ — once you’ve created an image it cannot be changed
+- _If you have made any changes then you need to create a brand-new image to incorporate that change_
+
+### Containers
+
+- Containers are _runnable instances of images_
+- It is a process that can run our application exactly as outlined in the image
+
+![alt text](./resources/image-2.png)
+![alt text](./resources/image-1.png)
+
+### Parent Image
+
+- Images are made up of several _layers_
+- The parent images serve as the base which is a _premade_
+  - This includes the OS & sometimes the runtime environment
+
+![alt text](./resources/image.png)
