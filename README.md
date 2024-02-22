@@ -55,3 +55,21 @@ Docker is also a popular choice for continuous integration and continuous delive
   - This includes the OS & sometimes the runtime environment
 
 ![alt text](./resources/image.png)
+
+## Dockerfile
+
+```docker
+FROM     # to pull the image
+WORKDIR  # to explicitly specify the working directory
+COPY     # to copy the source files from source directory to destination directory
+RUN      # to specify the commands that runs at the build time, while building the image
+EXPOSE   # to specify the ports
+CMD      # to specify the commands that run inside the container
+```
+
+## Important Commands
+
+```bash
+# To build the image --> docker build -t tag-name relative/path/to/Dockerfile
+$ docker build -t myapp .
+```
