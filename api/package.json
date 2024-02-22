@@ -1,0 +1,12 @@
+{
+  "name": "docker-crash-course",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Veerendra",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -L app.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
